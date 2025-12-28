@@ -65,4 +65,4 @@ class QuadraticEquationSolution {
 }
 ```
 ### Output:
-![output for quadratic equation](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/586ca1324091abcf5761a10cace300c0cac9420f/real%20roots.png)
+![output for quadratic equation](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/d8811add8ef80297a2058f9df9fa9b9747703545/real%20roots.png)
