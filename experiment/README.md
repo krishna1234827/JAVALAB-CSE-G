@@ -117,7 +117,7 @@ class Rectangle {
  }
 ```
 ## OUTPUT:
-![output for overloading methods]()
+![output for overloading methods](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/78ec70ebb16a50506829db6ca7eb84bc389f9972/2b.....png)
 ## TITLE :2c.) TO IMPLEMENT CUNSTRUCTOR IN JAVA
 ```
  class Student {
