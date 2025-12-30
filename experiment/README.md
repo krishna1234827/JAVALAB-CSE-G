@@ -89,7 +89,7 @@ class QuadraticEquationSolution {
  }
 ```
 ## OUTPUT:
-![output for overloading methods]()
+![output for overloading methods](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/b3bb4e2c7e3c0848f23dfadaa2295011ed74787e/2a....png)
 ## TITLE : TO IMPLEMENT CUNSTRUCTOR IN JAVA
 ```
  class Student {
