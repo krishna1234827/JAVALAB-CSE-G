@@ -93,7 +93,7 @@ class Rectangle {
 
 ```
 ## OUTPUT:
-![output for mechanism in java]()
+![output for mechanism in java](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/2441d2e0e84546c71503fc99146d6909ecffdab3/2a....png)
 ## TITLE: 2b.) Implementing overloading methods in java
 ```
  class sum {
