@@ -65,7 +65,7 @@ class QuadraticEquationSolution {
 }
 ```
 ### Output:
-![output for quadratic equation]()
+![output for quadratic equation](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/a3c3d752727d85bd12ec1741f3fcad903cebc3ca/complex%20roots.png)
 ## TITLE: 2b.) Implementing overloading methods in java
 ```
  class sum {
