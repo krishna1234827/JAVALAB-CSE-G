@@ -65,4 +65,56 @@ class QuadraticEquationSolution {
 }
 ```
 ### Output:
-![output for quadratic equation](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/d8811add8ef80297a2058f9df9fa9b9747703545/real%20roots.png)
+![output for quadratic equation]()
+## TITLE: 2b.) Implementing overloading methods in java
+```
+ class sum {
+    int sum(int a,int b) {
+      return a + b;
+   }
+   int sum(int a,int b,int c) {
+      return a + b +c;
+   }
+   double sum(double a,double b) {
+      return a + b;
+   }
+ }
+ class main {
+  public static void main(String args[]) {
+    sum s = new sum();
+    System.out.println("sum of 2 integers:" + s.sum(36,46));
+    System.out.println("sum of 3 integers:" + s.sum(20,36,46));
+    System.out.println("sum of two real number:" + s.sum(30-465,15-675));
+  }
+ }
+```
+## OUTPUT:
+![output for overloading methods]()
+## TITLE : TO IMPLEMENT CUNSTRUCTOR IN JAVA
+```
+ class Student {
+    String Sname;
+    int Sage;
+    double Smarks;
+    Student(String name, int age, double marks) {
+         Sname = name;
+         Sage = age;
+         Smarks = marks;
+    }
+    void display() {
+        System.out.println(" Student Name: " + Sname);
+        System.out.println(" Student Age: " + Sage);
+        System.out.println(" Student Marks: " + Smarks);
+    }
+}
+ class main {
+   public static void main(String args[]) {
+     Student  S = new Student("venu",21,965);
+     S.display();
+   }
+ }
+```
+## OUTPUT:
+![output for constructor]()
+
+
