@@ -66,6 +66,34 @@ class QuadraticEquationSolution {
 ```
 ### Output:
 ![output for quadratic equation](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/a3c3d752727d85bd12ec1741f3fcad903cebc3ca/complex%20roots.png)
+## experiment 2
+## TITLE: 2a.) Implement class mechanism in java
+```
+class Rectangle {
+   double length;
+   double breadth;
+   double area() {
+     return length * breadth;
+     }
+   double perimeter() {
+     return 2 * (length + breadth);
+   }
+ }
+ class main {
+   public static void main(String args[]) {
+     Rectangle rect = new Rectangle();
+     rect.length = 10;
+     rect.breadth = 5;
+     double area = rect.area();
+     double perimeter = rect.perimeter();
+     System.out.println("Area of given rectangle = " +area);
+     System.out.println("perimeter of the given rectangle:" + perimeter);
+   }
+ }
+
+```
+## OUTPUT:
+![output for mechanism in java]()
 ## TITLE: 2b.) Implementing overloading methods in java
 ```
  class sum {
@@ -89,8 +117,8 @@ class QuadraticEquationSolution {
  }
 ```
 ## OUTPUT:
-![output for overloading methods](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/b3bb4e2c7e3c0848f23dfadaa2295011ed74787e/2a....png)
-## TITLE : TO IMPLEMENT CUNSTRUCTOR IN JAVA
+![output for overloading methods]()
+## TITLE :2c.) TO IMPLEMENT CUNSTRUCTOR IN JAVA
 ```
  class Student {
     String Sname;
@@ -109,7 +137,7 @@ class QuadraticEquationSolution {
 }
  class main {
    public static void main(String args[]) {
-     Student  S = new Student("venu",21,965);
+     Student  S = new Student("bunny",28,965);
      S.display();
    }
  }
