@@ -199,7 +199,7 @@ import java.util.Scanner;
       }
  }
 ```
-![output for Fibonacis]()
+![output for Fibonacis](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/766d366882d28bf2eab245edd8a47937ab371ad8/Additional%20exp%202%20output.png)
 
 
 
