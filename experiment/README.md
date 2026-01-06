@@ -144,5 +144,62 @@ class Rectangle {
 ```
 ## OUTPUT:
 ![output for constructor](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/3cc2ba078e9080d6580e74fb0458b8ca6f8ab7b7/2c....png)
+# Additional experiment 2
+## TITLE : Fibonacis series
+```
+class Fibonacis {
+    int firstNumber;
+    int secondNumber;
+    int thirdNumber;
+    int sum;
+    int sizeofFibsequence;
+    Fibonacis(int size) {
+    firstNumber = 0;
+    secondNumber = 1;
+    thirdNumber = 0;
+    sum = 0;
+    sizeofFibsequence = size;
+  }
+  void generateFibsequence() {
+    while(sizeofFibsequence > 0) {
+      if(sizeofFibsequence == 1)
+    System.out.print(firstNumber + ".");
+    else
+       System.out.print(firstNumber + ",");
+       sizeofFibsequence--;
+       sum += firstNumber;
+       thirdNumber = firstNumber + secondNumber;
+       firstNumber = secondNumber;
+       secondNumber = thirdNumber;
+    }
+  }
+  int getFibsum() {
+    if(sum > 0) {
+     return sum;
+    } else {
+       generateFibsequence();
+         return sum;
+    }
+  }
+ }
+import java.util.Scanner;
+ class main {
+ public static void main(String args[]) {
+   System.out.print("enter the size of the sequence:");
+      Scanner Sc = new Scanner(System.in);
+      int size = Sc.nextInt();
+      if(size > 0) {
+      Fibonacis fib = new Fibonacis(size);
+      System.out.println("Fibonacis series are:");
+         fib.generateFibsequence();
+         System.out.println("the sum of Fibonacis series:" + fib.getFibsum());
+         }
+         else
+         System.out.println("Fibonacis sequence and cannot be calculated");
+      }
+ }
+```
+![output for Fibonacis]()
+
 
 
