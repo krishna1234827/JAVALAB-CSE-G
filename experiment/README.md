@@ -229,7 +229,7 @@ class main {
   }
  }
 ```
-![output]()
+![output](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/4cb761f53c3211c4f692502cf9d51ff5449b2784/3a......png)
 ## TITLE :3B.) BINARYSEARCH MECHANISM
 ```
 import java.util.Scanner;
