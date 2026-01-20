@@ -302,7 +302,7 @@ class main {
     }
 }
 ```
-![output]()
+![output](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/7d0ce0c3e0e088379eebf60145039bb21d3f0182/3b.........png)
 ## TITLE : 3C.) BUBBLE SORTING
 ```
  import java.util.Scanner;
