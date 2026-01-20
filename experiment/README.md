@@ -347,7 +347,7 @@ import java.util.Scanner;
     }
 }
 ```
-![output]()
+![output](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/e8c3705673269c3e11d06dc23232b18bc83d130c/3c......png)
 
 
 
