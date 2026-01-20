@@ -200,6 +200,155 @@ import java.util.Scanner;
  }
 ```
 ![output for Fibonacis](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/766d366882d28bf2eab245edd8a47937ab371ad8/Additional%20exp%202%20output.png)
+# EXPERIMENT 3
+## TITLE :3A.)CONSTRUCTOR OVERLOADING IN JAVA
+```
+ class student {
+   String name;
+   int age;
+   double marks;
+   student() {
+   }
+   student(String name,int age,double marks) {
+      this.name = name;
+      this.age = age;
+      this.marks = marks;
+   }
+   void display() {
+     System.out.println("student name:" + name);
+     System.out.println("student age:" + age);
+     System.out.println("student marks:" + marks);
+   }
+ }
+class main {
+  public static void main(String args[]) {
+    student std = new student();
+    std.display();
+    student std1 = new student("bunny",21,999.9);
+    std1.display();
+  }
+ }
+```
+![output]()
+## TITLE :3B.) BINARYSEARCH MECHANISM
+```
+import java.util.Scanner;
+
+class Binarysearch {
+    int list[];
+    int size;
+
+    Binarysearch(int size) {
+        this.size = size;
+        list = new int[size];
+    }
+
+    void setlist() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the list items in Ascending order:");
+        
+        for (int i = 0; i < size; i++) {
+            System.out.println("Enter value " + (i + 1) + ": ");
+            list[i] = sc.nextInt();
+        }
+    }
+
+    void getlist() {
+        for (int i = 0; i < size; i++)
+            System.out.print(list[i] + ",");
+        System.out.println("\b\b.");
+    }
+
+    int Binarysearch(int key) {
+        int low = 0;
+        int high = list.length - 1;
+
+        while (low <= high) {
+            int mid = (low + high) / 2;
+
+            if (list[mid] == key)
+                return mid;
+
+            else if (list[mid] < key)
+                low = mid + 1;
+
+            else
+                high = mid - 1;
+        }
+
+        return -1; 
+    }
+}
+import java.util.Scanner;
+
+class main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        Binarysearch bs = new Binarysearch(10);
+
+        bs.setlist();
+        bs.getlist();
+
+        System.out.println("Enter the key to search: ");
+        int key = sc.nextInt();
+
+        int index = bs.Binarysearch(key);
+
+        if (index == -1)
+            System.out.println("Key item does NOT exist.");
+        else
+            System.out.println("Key item exists at index: " + index);
+    }
+}
+```
+![output]()
+## TITLE : 3C.) BUBBLE SORTING
+```
+ import java.util.Scanner;
+
+class BubbleSort {
+    void bubbleSort(int arr[]) {
+        int n = arr.length;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+    }
+}
+import java.util.Scanner;
+ class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the size of the array: ");
+        int size = sc.nextInt();
+
+        int arr[] = new int[size];
+
+        for (int i = 0; i < size; i++) {
+            System.out.print("Enter element " + (i + 1) + ": ");
+            arr[i] = sc.nextInt();
+        }
+
+        BubbleSort bs = new BubbleSort();
+        bs.bubbleSort(arr);
+
+        System.out.print("Sorted array: ");
+        for (int i = 0; i < size; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+}
+```
+![output]()
+
 
 
 
