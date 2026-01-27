@@ -348,6 +348,135 @@ import java.util.Scanner;
 }
 ```
 ![output](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/e8c3705673269c3e11d06dc23232b18bc83d130c/3c......png)
+#EXPERIMENT -4:
+## TITLE : 4a.) SINGLE INHERITANCE:
+```
+class Person {
+    String name;
+    int age;
+
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    void displayPersonDetails() {
+        System.out.println("Name : " + name);
+        System.out.println("Age  : " + age);
+    }
+}
+ class Employee extends Person {
+    double annualSalary;
+    int yearOfJoining;
+    String nationalInsuranceNumber;
+    Employee(String name, int age, double annualSalary, int yearOfJoining, Stri>
+        super(name, age);
+        this.annualSalary = annualSalary;
+        this.yearOfJoining = yearOfJoining;
+        this.nationalInsuranceNumber = nationalInsuranceNumber;
+    }
+      void displayEmployeeDetails() {
+        displayPersonDetails();
+        System.out.println("Annual Salary : " + annualSalary);
+        System.out.println("Year Of Joining : " + yearOfJoining);
+        System.out.println("National Insurance Number : " + nationalInsuranceNu>
+    }
+}
+ public class TestEmployee {
+    public static void main(String[] args) {
+        Employee emp1 = new Employee(
+                "venu",
+                19,
+                700000,
+                2028,
+                "NI123456A"
+        );
+
+        emp1.displayEmployeeDetails();
+    }
+}
+```
+![output]()
+## TITLE : 4B.) MULTIPLE INHERITANCE:
+```
+class Bicycle {
+    String pedalType;
+
+    void showBicycleInfo() {
+        System.out.println("This is a bicycle with pedals.");
+        System.out.println("Pedal Type : " + pedalType);
+    }
+}
+ class Motorbike extends Bicycle {
+    int engineCapacity;
+
+    void showMotorbikeInfo() {
+        System.out.println("This motorbike has an engine.");
+        System.out.println("Engine Capacity : " + engineCapacity + " cc");
+    }
+}
+class ElectricBike extends Motorbike {
+    int batteryCapacity;
+
+    void showElectricBikeInfo() {
+        System.out.println("This electric bike has an electric motor and battery.");
+        System.out.println("Battery Capacity : " + batteryCapacity + " Wh");
+    }
+}
+ public class TestVehicle {
+    public static void main(String[] args) {
+        ElectricBike eBike = new ElectricBike();
+        eBike.pedalType = "Standard Pedals";
+        eBike.engineCapacity = 250;
+        eBike.batteryCapacity = 500;
+        eBike.showBicycleInfo();
+        eBike.showMotorbikeInfo();
+        eBike.showElectricBikeInfo();
+    }
+}
+```
+![output]()
+##TITLE : 4c.) ABSTRACT CLASS IN JAVA TO FIND AREA IN DIFFERENT SHAPES:
+```
+ abstract class Figure {
+     double dim1;
+     double dim2;
+     Figure(double dim1,double dim2) {
+     this.dim1 = dim1;
+     this.dim2 = dim2;
+     }
+  abstract double area();
+ }
+ class Rectangle extends Figure {
+   Rectangle(double length,double breadth) {
+            super(length,breadth);
+   }
+   double area() {
+   double result = dim1*dim2;
+   return result;
+   }
+ }
+ class Triangle extends Figure {
+      Triangle(double base,double height) {
+           super(base,height);
+      }
+      double area() {
+             double result = 0.5*dim1*dim2;
+             return result;
+      }
+ }
+ class TestFigure {
+      public static void main(String args[]) {
+
+      Figure f1 = new Rectangle(23.4,14.5);
+      Figure f2 = new Triangle(12.3,15.6);
+
+      System.out.println("Area of Rectangle = " + f1.area());
+      System.out.println("Area of Triangle =" + f2.area());
+      }
+ }
+```
+![output]()
 
 
 
