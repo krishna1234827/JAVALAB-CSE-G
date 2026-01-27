@@ -435,7 +435,7 @@ class ElectricBike extends Motorbike {
     }
 }
 ```
-![output]()
+![output](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/118617e3749ee19bbd425821cd48805ddf7e6f91/4b.......png)
 ##TITLE : 4c.) ABSTRACT CLASS IN JAVA TO FIND AREA IN DIFFERENT SHAPES:
 ```
  abstract class Figure {
