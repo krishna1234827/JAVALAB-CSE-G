@@ -535,7 +535,7 @@ class ElectricBike extends Motorbike {
     }
 }
 ```
-![OUTPUT]()
+![OUTPUT](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/cd4c89a0f332a37724b4e90b6b53bd0b9fab750d/5a%20output.png)
 ## TITLE :5B.) IMPLEMENT RUNTIME POLYMORPHISM
 ```
 class Vehicle {
