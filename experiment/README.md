@@ -528,7 +528,7 @@ import java.util.Scanner;
      }
  }
 ```
-![output]()
+![output](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/e6c039f9fd5e1be356a6f2266af8d35762f315b7/add%203.png)
 # ADDITIONAL EXPERIMENT 4
 ```
  import java.util.Scanner;
