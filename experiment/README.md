@@ -567,7 +567,7 @@ class Vehicle {
     }
 }
 ```
-![OUTPUT]()
+![OUTPUT](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/5e530d5f771e133bb8b5fada5937fa1238f4396f/5b%20output.png)
 ## TITLE :5C.)STRING BUFFFER TO DELETE,REMOVE CHARACTER
 ```
  class StringBufferDelete {
