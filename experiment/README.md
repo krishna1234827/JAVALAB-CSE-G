@@ -477,6 +477,84 @@ class ElectricBike extends Motorbike {
  }
 ```
 ![output](https://github.com/krishna1234827/JAVALAB-CSE-G/blob/d4699d7a1373430be0a7405d4ec488c61e33a8a1/4c.............png)
+# Additional experiment 1
+## TITLE : INSERT SUBSTRING
+```
+import java.util.Scanner;
+ class InsertSubstring {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("mainString: ");
+        String mainString = sc.nextLine();
+        System.out.print("subString: ");
+        String subString = sc.nextLine();
+        System.out.print("position: ");
+        int position = sc.nextInt();
+        if (position < 0 || position > mainString.length()) {
+        System.out.println("Invalid Position");
+        } else {
+            String firstPart = mainString.substring(0, position);
+            String secondPart = mainString.substring(position);
+            String resultString = firstPart + subString + secondPart;
+            System.out.println("Resultant String: " + resultString);
+        }
+
+        sc.close();
+    }
+}
+```
+![output]()
+# Additional experiment 3
+```
+import java.util.Scanner;
+ class PalindromeCheck {
+   public static void main(String args[]) {
+     Scanner sc = new Scanner(System.in);
+     System.out.print("enter a string:");
+     String str = sc.nextLine();
+     int start = 0;
+     int end = str.length() - 1;
+     while(start < end) {
+     if(str.charAt(start) != str.charAt(end)) {
+     System.out.println("str is  \"" + str + "\" not  Palindrome");
+     sc.close();
+     return;
+     }
+     start++;
+     end--;
+     }
+     System.out.println("str \"" + str + "\" is a Palindrome");
+     sc.close();
+     }
+ }
+```
+![output]()
+# ADDITIONAL EXPERIMENT 4
+```
+ import java.util.Scanner;
+class PerfectNumber {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        int sum = 0;
+        for (int i = 1; i < num-1; i++) {
+            if (num % i == 0) {
+                sum = sum + i;
+            }
+        }
+
+        if (sum == num) {
+            System.out.println(num + " is a Perfect Number");
+        } else {
+            System.out.println(num + " is not a Perfect Number");
+        }
+
+        sc.close();
+    }
+}
+```
+![output]()
 ## EXPERIMENT 5
 ## TITLE : 5A.)IMPLEMENT INTERFACE
 ```
